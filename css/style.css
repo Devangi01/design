@@ -1,1 +1,273 @@
+@import "utilities.css";
+:root {
+  --primary: rgb(29, 221, 189);
+  --bgDark: rgb(12, 12, 12);
+  --white: rgb(250, 250, 250);
+  --secondary: rgb(0, 59, 50);
+  --bgLight: rgb(190, 181, 181);
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  background-color: var(--bgDark);
+}
+header nav .left a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+header nav .left a:hover {
+  color: var(--primary);
+}
+header nav {
+  padding: 2rem 0;
+}
+/* header nav .logo {
+  margin-right: 3rem;
+} */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+.hero {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.hero .left img {
+  
+  height: 500px;
+  width: 500px;
+  margin: 50px;
+}
+.hero .right {
+  color: var(--white);
+  /* margin-top: 7rem; */
+}
+.hero .right h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: var(--bgDark);
+  margin-bottom: 2rem;
+}
+.hero .right h1 span {
+  color: var(--primary);
+}
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  color: var(--bgDark);
+}
+.flex {
+  display: flex;
+}
+.items-centre {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-right {
+  justify-content: flex-end;
+}
+.btn {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--secondary);
+  margin-top: -15rem;
+}
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.flex-1 {
+  flex: 1;
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.card-container {
+    margin: 5rem;    
+}
+  
+  .card {
+    /* height: 500px; */
+    flex: 1;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  .card img {
+    width: 100%;
+    flex-wrap: 1;
+
+  }
+  .card .btn-secondary {
+    margin-left: 2rem;
+  }
+  .card h2 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    color: #333;
+    padding: 2rem;
+  }
+
+
+.flex-container {
+    margin: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .section-item {
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+  }
+  
+  .image-container {
+    width: 100px;
+    margin-right: 1rem;
+  }
+  
+  .section-item .content {
+    flex: 1; 
+  }
+  
+  .section-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
+    font-size: 16px;
+  }
+
+  .row {
+    padding: 1em 1em;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #c7940a;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+  input,
+  button {
+    font-size: 1em;
+    padding: 1em;
+    /* width: 100%; */
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  button {
+    background-color: rgb(29, 221, 189);
+    color: #ffffff;
+  }
+
+  .copyright {
+    padding: 1rem;
+    background-color: #25262e;
+  }
+  .footer-menu{
+    float: left;
+      margin-top: 10px;
+  }
+  .footer-menu a{
+    color: #cfd2d6;
+    padding: 6px;
+    text-decoration: none;
+  }
+  .copyright p {
+    font-size: 0.9em;
+    text-align: left;
+  }
+  
+  
